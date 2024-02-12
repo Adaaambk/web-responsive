@@ -1,0 +1,94 @@
+@media screen and (max-width: 600px) {
+    nav{
+        padding-right: 40px;
+        align-items: baseline;
+    }
+    nav .links{
+        flex-direction: column;
+        position: relative;
+    }
+    nav .links .menu{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 40px;
+        height: 20px;
+    }
+    nav .links .menu span{
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #000;
+    }
+    nav .links .menu span:nth-child(2){
+        position: absolute;
+        top: 48%;
+        transform: translateY(2%);
+    }
+    nav .links .menu span:nth-child(3){
+        position: absolute;
+        top: 100%;
+    }
+    nav .links ul{
+        display: none;
+    }
+    nav .links #menuu:checked + ul{
+        display: block;
+    }
+    nav .links ul li{
+        margin: 15px 0;
+        width: fit-content;
+    }
+    nav .links ul li::before{
+        bottom: -3px;
+    }
+
+    .contentt{
+        display: none;
+    }
+    
+    section .hero-box{
+        flex-direction: column;
+    }
+    section .image img{
+        width: 100%;
+    }
+    section .image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    section .content{
+        width: 100%;
+    }
+
+
+    .cardsCont .cardCont{
+        flex-direction: column;
+    }
+    .cardsCont .cardCont .text-content{
+        margin: 20px 0;
+    }
+    .cardsCont .cardCont img{
+        width: 100%;
+    }
+
+
+
+    .cards .all-cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    footer .foot .link{
+        margin-bottom: 30px;
+    }
+    footer .foot .linkFour a{
+        margin: 0px 5px 20px;
+    }
+
+}
